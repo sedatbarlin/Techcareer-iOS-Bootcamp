@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22113.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22089"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WidgetsKullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-cp-PSO">
+                                <rect key="frame" x="186.5" y="64" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Veri Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-Zb-7jW">
+                                <rect key="frame" x="50" y="100.5" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6r-cQ-orr">
+                                <rect key="frame" x="179.5" y="150.5" width="55" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Oku"/>
+                                <connections>
+                                    <action selector="okuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P15-Bw-XUf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mutlu" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-zL-6pY">
+                                <rect key="frame" x="171" y="201" width="72" height="72"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="cIP-wR-qrT"/>
+                                    <constraint firstAttribute="height" constant="72" id="qgE-Kq-Ua1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YGG-Iv-est">
+                                <rect key="frame" x="108.5" y="289" width="197" height="34.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSz-xN-JaQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Mutlu"/>
+                                        <connections>
+                                            <action selector="mutluButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbz-c7-yaL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYG-xD-6eI">
+                                        <rect key="frame" x="123.5" y="0.0" width="73.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Üzgün"/>
+                                        <connections>
+                                            <action selector="uzgunButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSJ-ZV-B35"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SnB-O9-TWX">
+                                <rect key="frame" x="182.5" y="339.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchDegisim:" destination="BYZ-38-t0r" eventType="valueChanged" id="V0n-3G-YWJ"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kt-L3-4hs">
+                                <rect key="frame" x="186.5" y="386.5" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiX-j1-r7L">
+                                <rect key="frame" x="169.5" y="811.5" width="75.5" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Göster"/>
+                                <connections>
+                                    <action selector="gosterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lS0-Kk-QvD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3SD-zL-6pY" firstAttribute="top" secondItem="W6r-cQ-orr" secondAttribute="bottom" constant="16" id="6J1-KX-elQ"/>
+                            <constraint firstItem="SnB-O9-TWX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Iy-4b-I51"/>
+                            <constraint firstItem="YGG-Iv-est" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ZU-Og-Xpf"/>
+                            <constraint firstItem="D3W-cp-PSO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A0A-wM-jT1"/>
+                            <constraint firstItem="Mag-Zb-7jW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="BHi-hY-qt2"/>
+                            <constraint firstItem="SnB-O9-TWX" firstAttribute="top" secondItem="YGG-Iv-est" secondAttribute="bottom" constant="16" id="CAq-wy-p0s"/>
+                            <constraint firstItem="Mag-Zb-7jW" firstAttribute="top" secondItem="D3W-cp-PSO" secondAttribute="bottom" constant="16" id="Dqr-Uf-fXN"/>
+                            <constraint firstItem="YiX-j1-r7L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K4g-Hh-TLy"/>
+                            <constraint firstItem="W6r-cQ-orr" firstAttribute="top" secondItem="Mag-Zb-7jW" secondAttribute="bottom" constant="16" id="Nt8-o9-i2U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mag-Zb-7jW" secondAttribute="trailing" constant="50" id="W4k-I6-U3O"/>
+                            <constraint firstItem="2kt-L3-4hs" firstAttribute="top" secondItem="SnB-O9-TWX" secondAttribute="bottom" constant="16" id="dHb-x1-Udm"/>
+                            <constraint firstItem="YGG-Iv-est" firstAttribute="top" secondItem="3SD-zL-6pY" secondAttribute="bottom" constant="16" id="e7h-AV-ejC"/>
+                            <constraint firstItem="2kt-L3-4hs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2k-d7-myD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YiX-j1-r7L" secondAttribute="bottom" constant="16" id="mWd-kg-1MH"/>
+                            <constraint firstItem="D3W-cp-PSO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="nnm-T3-BHK"/>
+                            <constraint firstItem="3SD-zL-6pY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rPD-B0-RPN"/>
+                            <constraint firstItem="W6r-cQ-orr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ycJ-Tx-Khi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="girdiTextField" destination="Mag-Zb-7jW" id="xCU-tp-XV3"/>
+                        <outlet property="imageView" destination="3SD-zL-6pY" id="KqZ-rF-F1e"/>
+                        <outlet property="mySwitch" destination="SnB-O9-TWX" id="zbT-Et-stx"/>
+                        <outlet property="sonucLabel" destination="D3W-cp-PSO" id="kNk-pu-ysK"/>
+                        <outlet property="switchLabel" destination="2kt-L3-4hs" id="PfA-rv-sRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mutlu" width="13" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
